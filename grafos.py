@@ -1,20 +1,23 @@
 # -*- coding: utf-8 -*- 
 
 class GrafoHashTable:
+    """Clase GrafoHashTable"""
 
-    """Tabla que contiene los datos de los vertices."""
     vertices = {}
+    """Tabla que contiene los datos de los vertices."""
 
-    """Tabla que contienes los arcos de los vertices."""
     grafo = {}
+    """Tabla que contienes los arcos de los vertices."""
 
-    """Cantidad de vertices en el grafo."""
     size = None
+    """Cantidad de vertices en el grafo."""
 
     def Lectura(self, archivoTXT):
+        """Lectura del archivoTXT para leer los datos."""
         pass
 
     def getSize(self):
+        """Devuelve el tamaño del grafo."""
         return GrafoHashTable.size
 
 class Vertice:
@@ -26,12 +29,15 @@ class Vertice:
         self._nombre = nombre
 
     def getPosX(self):
+        """Devuelve la posicion x del vertice."""
         return self._posX
 
     def getPosY(self):
+        """Devuelve la posicion y del vertice."""
         return self._posY
 
     def getNombre(self):
+        """Devuelve el nombre del vertice."""
         return self._nombre
 
 class Arco:
