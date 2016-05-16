@@ -58,7 +58,7 @@ class Arco:
 
 def main():
     """ Funcion main """ 
-    pass 
+    print("Hola Mundo")
 
 if __name__ == "__main__":
     main()
