@@ -55,3 +55,10 @@ class Arco:
     def getDistancia(self):
         """Método que retorna la distancia del arco"""
         return self._distancia
+
+def main():
+    """ Funcion main """ 
+    pass 
+
+if __name__ == "__main__":
+    main()
