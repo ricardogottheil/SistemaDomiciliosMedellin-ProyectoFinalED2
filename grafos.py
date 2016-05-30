@@ -19,8 +19,8 @@ class GrafoHashTable:
         """Lectura del archivoTXT para leer los datos y crear el grafo."""
         self.archivo = archivoTXT
         fh = open(self.archivo, 'r')
-        for self.linea in fh:
-         print(self.linea)
+        for linea in fh:
+         print(linea)
         fh.close()
 
 
