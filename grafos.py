@@ -17,8 +17,7 @@ class GrafoHashTable:
 
     def Lectura(self, archivoTXT):
         """Lectura del archivoTXT para leer los datos y crear el grafo."""
-        self.archivo = archivoTXT
-        fh = open(self.archivo, 'r')
+        fh = open(archivoTXT, 'r')
         for linea in fh:
          print(linea)
         fh.close()
@@ -66,13 +65,8 @@ class Arco:
 
 def main():
     """ Funcion main """
-    # 'Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt'
-    # fh = open('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt', 'r')
-    # for linea in fh:
-    #  print(linea)
-    # fh.close()
-    # 
-    GrafoHashTable.Lectura('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt')
+    grafo = GrafoHashTable()
+    grafo.Lectura('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt')
 
 
 if __name__ == "__main__":
