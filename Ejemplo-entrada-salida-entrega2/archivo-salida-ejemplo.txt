@@ -1,0 +1,2 @@
+#Lista de vertices con el ciclo más corto que pasa por todos los vertices del grafo y vuelve a donde empezó
+0,4,1,2,3,0

@@ -12,11 +12,11 @@ class GrafoHashTable:
             Size: Cantidad de vertices en el grafo.
         """
         self.vertices = {}
-        self.grafo ={}
+        self.grafo = {}
         self.size = None
 
     def Lectura(self, archivoTXT):
-        """Lectura del archivoTXT para leer los datos."""
+        """Lectura del archivoTXT para leer los datos y crear el grafo."""
         pass
 
     def getSize(self):
