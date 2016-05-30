@@ -17,7 +17,12 @@ class GrafoHashTable:
 
     def Lectura(self, archivoTXT):
         """Lectura del archivoTXT para leer los datos y crear el grafo."""
-        pass
+        self.archivo = archivoTXT
+        fh = open(self.archivo, 'r')
+        for self.linea in fh:
+         print(self.linea)
+        fh.close()
+
 
     def getSize(self):
         """Devuelve el tamaño del grafo."""
@@ -60,8 +65,15 @@ class Arco:
         return self._distancia
 
 def main():
-    """ Funcion main """ 
-    print("Hola Mundo")
+    """ Funcion main """
+    # 'Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt'
+    # fh = open('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt', 'r')
+    # for linea in fh:
+    #  print(linea)
+    # fh.close()
+    # 
+    GrafoHashTable.Lectura('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt')
+
 
 if __name__ == "__main__":
     main()
