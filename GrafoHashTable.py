@@ -15,12 +15,30 @@ class GrafoHashTable:
         self.grafo = {}
         self.size = None
 
-    def Lectura(self, archivoTXT):
+    def LecturaVertices(self, archivoTXT):
         """Lectura del archivoTXT para leer los datos y crear el grafo."""
-        fh = open(archivoTXT, 'r')
-        for linea in fh:
-         print(linea)
-        fh.close()
+        
+        contenido = ''
+        fh = open(archivoTXT)
+        while True:
+            line = fh.readline()
+            contenido += line
+            if line=='':
+                break
+        print(contenido)
+
+    def LecturaArcos(self, archivoTXT):
+        """Lectura del archivoTXT para leer los datos, para luego crear los arcos."""
+        
+        contenido = ''
+        fh = open(archivoTXT)
+        while True:
+            line = fh.readline()
+            contenido += line
+            if line=='':
+                break
+        print(contenido)
+
 
 
     def getSize(self):

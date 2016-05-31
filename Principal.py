@@ -7,7 +7,7 @@ from GrafoHashTable import GrafoHashTable
 def main():
     """ Funcion principañ """
     grafo = GrafoHashTable()
-    grafo.Lectura('Ejemplo-entrada-salida-entrega2/archivo-entrada-ejemplo.txt')
+    grafo.LecturaVertices('Entrega2/vertices.txt')
 
 
 if __name__ == "__main__":
