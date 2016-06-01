@@ -71,3 +71,4 @@ def anterior(etiqueta):
 def menorValorNoProcesado(etiquetas, procesados):
     etiquetadosSinProcesar = filter(lambda (nodo,_):not nodo in procesados, etiquetas.iteritems())
     return min(etiquetadosSinProcesar, key=lambda (_, (acum, __)): acum)[0]
+
