@@ -16,21 +16,24 @@ def main():
     for line in fn:
         linea = line.split(',')
         vert = int(linea[0])
-        # coordenadax = int(line[1])
-        # coordenaday = int(line[2])
+        coordenadax = linea[1]
+        coordenaday = linea[2]
         nom = str(linea[3])
+        
 
         vertices.append(vert)
-        # coordx.append(coordenadax)
-        # coordy.append(coordenaday)
-        nombres.append(nom)
-    
+        coordx.append(coordenadax)
+        coordy.append(coordenaday)
+        nombres.append(nom.rstrip('\n'))
+
     fn.close()
 
     print vertices
     print coordx
     print coordy
     print nombres
+
+
 
 if __name__ == "__main__":
     main()
