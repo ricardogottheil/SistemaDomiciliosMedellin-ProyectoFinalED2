@@ -19,7 +19,7 @@ def main():
         coordenadax = linea[1]
         coordenaday = linea[2]
         nom = str(linea[3])
-        
+
 
         vertices.append(vert)
         coordx.append(coordenadax)
@@ -28,10 +28,8 @@ def main():
 
     fn.close()
 
-    print vertices
-    print coordx
-    print coordy
-    print nombres
+    for v,cx,cy,n in zip(vertices,coordx,coordy,nombres):
+        print 'Vertice: %s \n Coordenada X: %s \n Coordenada Y: %s \n Nombre: %s \n \n' % (v,cx,cy,n) 
 
 
 
