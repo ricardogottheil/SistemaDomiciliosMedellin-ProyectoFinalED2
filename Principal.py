@@ -34,7 +34,7 @@ def main():
     #IMPRIMIR
     # for v,cx,cy,n in zip(vertices,coordx,coordy,nombresVertices):
     #     print 'Vertice: %s \n Coordenada X: %s \n Coordenada Y: %s \n Nombre Vertice: %s \n \n' % (v,cx,cy,n)
-    
+
     # AGREGRAR NODOS
     for v in vertices:
         agregar(grafo, v)  
