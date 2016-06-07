@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-from Grafo import Arista, Grafo, agregar, caminoMinimo, construirCamino, dijkstra, generarEtiqueta, relacionar
+from Grafo import Arista, Grafo, agregar, caminoMinimo, construirCamino, dijkstra, generarEtiqueta, relacionar, profundidadPrimero, imprimir
 
 def main():
     """ Funcion principal """

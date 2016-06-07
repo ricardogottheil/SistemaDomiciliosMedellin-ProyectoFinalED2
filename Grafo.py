@@ -250,35 +250,3 @@ def menorValorNoProcesado(etiquetas, procesados):
     etiquetadosSinProcesar = filter(lambda (nodo,_):not nodo in procesados, etiquetas.iteritems())
     return min(etiquetadosSinProcesar, key=lambda (_, (acum, __)): acum)[0]
 
-def profundidadPrimero(grafo, elementoInicial, funcion, elementosRecorridos = []):
-    """
-    Profundidad desde un nodo.
-
-    :type grafo: grafo
-    :param grafo: Objeto grafo
-
-    :type elementoInicial: Variable
-    :param elementoInicial: Nodo inicial del grafo
-
-    :type funcion: function
-    :param funcion: Función como parametro (imprimir)
-
-    :type elementosRecorridos: array
-    :param elementosRecorridos: Arreglo con los elementos recorridos.
-    """
-    if elementoInicial in elementosRecorridos:
-        return
-    funcion(elementoInicial)
-    elementosRecorridos.append(elementoInicial)
-    for vecino in grafo.relaciones[elementoInicial]:
-        profundidadPrimero(grafo, vecino, funcion, elementosRecorridos)
-
-def imprimir (elemento):
-    """
-    Metodo para imprimir un elemento
-
-    :type elemento: Variable
-    :param elemento: Variable a imprimir
-    """
-    print elemento
-
