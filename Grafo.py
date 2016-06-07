@@ -19,6 +19,33 @@ class Grafo(object):
         """
         return str(self.relaciones)
 
+    # def hamiltoniano(self, current=None, pending=None, destiny=None):
+    #     if pending is None:
+    #         pending = self.relaciones.values()
+
+    #     result = None
+
+    #     if current is None:
+    #         for current in pending:
+    #             result = self.hamiltoniano(current, [x for x in pending if x is not current], current)
+    #             if result is not None:
+    #                 break
+    #     else:
+    #         if pending == []: 
+    #             if current.reaches(destiny):
+    #                 return [current]
+    #             else:
+    #                 return None
+ 
+    #         for x in [self.relaciones[v] for v in current.peso]:
+    #             if x in pending:
+    #                 result = self.hamiltoniano(x, [y for y in pending if y is not x], destiny)
+    #                 if result is not None:
+    #                     result = [current] + result
+    #                     break    
+ 
+    #     return result
+
 class Arista(object):
     """"
     Clase Arista.
