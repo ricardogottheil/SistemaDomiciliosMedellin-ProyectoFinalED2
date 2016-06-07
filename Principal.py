@@ -104,6 +104,8 @@ def main():
     # for v1,v2,d,n in zip(vertices1,vertices2,distancia,nombreArcos):
     #     print 'Vertice 1: %s \n Vertice 2: %s \n Distancia: %s \n Nombre Arco: %s \n \n' % (v1,v2,d,n) 
 
+
+
     # AGREGRAR ARCOS
     for v1,v2,n in zip(vertices1,vertices2,nombreArcos):
         relacionar(grafo, v1, v2, n)
