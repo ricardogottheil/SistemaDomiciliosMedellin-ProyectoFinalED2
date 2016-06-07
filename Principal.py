@@ -6,7 +6,7 @@ def main():
     """ Funcion principal """
 
 
-    ###  EJEMPLO
+    ##  EJEMPLO
     
     # a = "a"
     # b = "b"
