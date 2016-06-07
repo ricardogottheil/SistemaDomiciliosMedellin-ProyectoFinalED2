@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# SistemaDomiciliosMedellin-ProyectoFinalED2 documentation build configuration file, created by
-# sphinx-quickstart on Mon Jun 06 19:11:28 2016.
+# SistemaDomiciliosMedellin-ProyectoFinalED2 documentation build configuration file, created by
+# sphinx-quickstart on Mon Jun 06 21:01:40 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -18,7 +18,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../'))
+
+sys.path.append('D:\Documentos\Ricardo Gottheil\EAFIT\EstructurasDeDatosYalgoritmos-2\ProyectoFinal\SistemaDomiciliosMedellin-ProyectoFinalED2')
+# sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
@@ -29,7 +31,9 @@ sys.path.insert(0, os.path.abspath('../'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -48,9 +52,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'SistemaDomiciliosMedellin-ProyectoFinalED2'
-copyright = u'2016, Ricardo Gottheil DFlórez'
-author = u'Ricardo Gottheil DFlórez'
+project = u'SistemaDomiciliosMedellin-ProyectoFinalED2'
+copyright = u'2016, Ricardo Gottheil Flórez'
+author = u'Ricardo Gottheil Flórez'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -133,7 +137,7 @@ html_theme = 'sphinx_rtd_theme'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'SistemaDomiciliosMedellin-ProyectoFinalED2 v1.0'
+# html_title = u'SistemaDomiciliosMedellin-ProyectoFinalED2 v1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -259,8 +263,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SistemaDomiciliosMedellin-ProyectoFinalED2.tex', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
-     u'Ricardo Gottheil DFlórez', 'manual'),
+    (master_doc, 'SistemaDomiciliosMedellin-ProyectoFinalED2.tex', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
+     u'Ricardo Gottheil Flórez', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -295,7 +299,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sistemadomiciliosmedellin-proyectofinaled2', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
+    (master_doc, 'sistemadomiciliosmedellin-proyectofinaled2', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
      [author], 1)
 ]
 
@@ -310,7 +314,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SistemaDomiciliosMedellin-ProyectoFinalED2', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
+    (master_doc, 'SistemaDomiciliosMedellin-ProyectoFinalED2', u'SistemaDomiciliosMedellin-ProyectoFinalED2 Documentation',
      author, 'SistemaDomiciliosMedellin-ProyectoFinalED2', 'One line description of project.',
      'Miscellaneous'),
 ]

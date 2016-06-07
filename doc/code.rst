@@ -1,5 +1,5 @@
 Grafo
-===================
+====================
 
 .. automodule:: Grafo
    :members:

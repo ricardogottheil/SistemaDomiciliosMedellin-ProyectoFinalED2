@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Grafo &mdash; SistemaDomiciliosMedellin-ProyectoFinalED2 1.0 documentation</title>
+  <title>Grafo &mdash; SistemaDomiciliosMedellin-ProyectoFinalED2 1.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="SistemaDomiciliosMedellin-ProyectoFinalED2 1.0 documentation" href="index.html"/> 
+    <link rel="top" title="SistemaDomiciliosMedellin-ProyectoFinalED2 1.0 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -48,7 +48,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> SistemaDomiciliosMedellin-ProyectoFinalED2
+            <a href="index.html" class="icon icon-home"> SistemaDomiciliosMedellin-ProyectoFinalED2
           
 
           
@@ -93,7 +93,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">SistemaDomiciliosMedellin-ProyectoFinalED2</a>
+        <a href="index.html">SistemaDomiciliosMedellin-ProyectoFinalED2</a>
       </nav>
 
 
@@ -124,8 +124,260 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="grafo">
-<h1>Grafo<a class="headerlink" href="#grafo" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-Grafo">
+<span id="grafo"></span><h1>Grafo<a class="headerlink" href="#module-Grafo" title="Permalink to this headline">¶</a></h1>
+<p>Implementación del grafo.</p>
+<dl class="class">
+<dt id="Grafo.Arista">
+<em class="property">class </em><code class="descclassname">Grafo.</code><code class="descname">Arista</code><span class="sig-paren">(</span><em>elemento</em>, <em>peso</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.Arista" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#8221;
+Clase Arista.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Grafo.Grafo">
+<em class="property">class </em><code class="descclassname">Grafo.</code><code class="descname">Grafo</code><a class="headerlink" href="#Grafo.Grafo" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#8221;
+Clase Grafo</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.acumulado">
+<code class="descclassname">Grafo.</code><code class="descname">acumulado</code><span class="sig-paren">(</span><em>etiqueta</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.acumulado" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo que retorna el acumulado.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>etiqueta</strong> (<em>string</em>) &#8211; Nombre de cada nodo</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.agregar">
+<code class="descclassname">Grafo.</code><code class="descname">agregar</code><span class="sig-paren">(</span><em>grafo</em>, <em>elemento</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.agregar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para agregar un nodo al grafo.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>elemento</strong> (<em>Variable</em>) &#8211; Elemento a agregar al grafo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.anterior">
+<code class="descclassname">Grafo.</code><code class="descname">anterior</code><span class="sig-paren">(</span><em>etiqueta</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.anterior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo que retorna la etiqueta anterior.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>etiqueta</strong> (<em>string</em>) &#8211; Nombre de cada nodo</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.aristas">
+<code class="descclassname">Grafo.</code><code class="descname">aristas</code><span class="sig-paren">(</span><em>grafo</em>, <em>nodo</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.aristas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para retornar las aristas que tiene un nodo.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>nodo</strong> (<em>Variable</em>) &#8211; Nodo del grafo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.caminoMinimo">
+<code class="descclassname">Grafo.</code><code class="descname">caminoMinimo</code><span class="sig-paren">(</span><em>grafo</em>, <em>origen</em>, <em>destino</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.caminoMinimo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para encontrar el camino entre dos nodos.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>origen</strong> (<em>Variable</em>) &#8211; Nodo origen</li>
+<li><strong>destino</strong> (<em>Variable</em>) &#8211; Nodo destino</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.construirCamino">
+<code class="descclassname">Grafo.</code><code class="descname">construirCamino</code><span class="sig-paren">(</span><em>etiquetas</em>, <em>origen</em>, <em>destino</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.construirCamino" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para construir un camino entre dos nodos.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>origen</strong> (<em>Variable</em>) &#8211; Nodo origen</li>
+<li><strong>destino</strong> (<em>Variable</em>) &#8211; Nodo destino</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.dijkstra">
+<code class="descclassname">Grafo.</code><code class="descname">dijkstra</code><span class="sig-paren">(</span><em>grafo</em>, <em>destino</em>, <em>etiquetas</em>, <em>procesados</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.dijkstra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para implementar el algoritmo de Djikstra.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>destino</strong> (<em>Variable</em>) &#8211; Nodo destino</li>
+<li><strong>etiquetas</strong> (<em>string</em>) &#8211; Nombre de cada nodo</li>
+<li><strong>procesados</strong> (<em>Variable</em>) &#8211; Elementos procesados del grafo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.generarEtiqueta">
+<code class="descclassname">Grafo.</code><code class="descname">generarEtiqueta</code><span class="sig-paren">(</span><em>grafo</em>, <em>nodo</em>, <em>anterior</em>, <em>etiquetas</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.generarEtiqueta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para generar las etiquetas.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>nodo</strong> (<em>Variable</em>) &#8211; Nodo del grafo</li>
+<li><strong>anterior</strong> (<em>array</em>) &#8211; Etiqueta anterior</li>
+<li><strong>etiquetas</strong> (<em>string</em>) &#8211; Nombre de cada nodo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.menorValorNoProcesado">
+<code class="descclassname">Grafo.</code><code class="descname">menorValorNoProcesado</code><span class="sig-paren">(</span><em>etiquetas</em>, <em>procesados</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.menorValorNoProcesado" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo que retorna el valor menor no procesado.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>etiquetas</strong> (<em>string</em>) &#8211; Nombre de cada nodo</li>
+<li><strong>procesados</strong> (<em>Variable</em>) &#8211; Elementos procesados del grafo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.peso">
+<code class="descclassname">Grafo.</code><code class="descname">peso</code><span class="sig-paren">(</span><em>grafo</em>, <em>nodoOrigen</em>, <em>nodoDestino</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.peso" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para retornar el peso de un nodo a otro</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>nodoOrigen</strong> (<em>Variable</em>) &#8211; Nodo origen</li>
+<li><strong>nodoDestino</strong> (<em>Variable</em>) &#8211; Nodo destino</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.relacionar">
+<code class="descclassname">Grafo.</code><code class="descname">relacionar</code><span class="sig-paren">(</span><em>grafo</em>, <em>elemento1</em>, <em>elemento2</em>, <em>peso=1</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.relacionar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para relacionar dos nodos. (Arcos)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>elemento1</strong> (<em>Variable</em>) &#8211; Elemento 1 a relacionar con el elemento 2</li>
+<li><strong>elemento2</strong> (<em>Variable</em>) &#8211; Elemento 2 a relacionar con el elemento 1</li>
+<li><strong>peso</strong> (<em>int</em>) &#8211; Peso de la relación</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.relacionarUnilateral">
+<code class="descclassname">Grafo.</code><code class="descname">relacionarUnilateral</code><span class="sig-paren">(</span><em>grafo</em>, <em>origen</em>, <em>destino</em>, <em>peso</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.relacionarUnilateral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para relacionar un nodo con otro.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>origen</strong> (<em>Variable</em>) &#8211; Nodo origen</li>
+<li><strong>destino</strong> (<em>Variable</em>) &#8211; Nodo destino</li>
+<li><strong>peso</strong> (<em>int</em>) &#8211; Peso de la relación</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grafo.vecinoNoProcesado">
+<code class="descclassname">Grafo.</code><code class="descname">vecinoNoProcesado</code><span class="sig-paren">(</span><em>grafo</em>, <em>nodo</em>, <em>procesados</em><span class="sig-paren">)</span><a class="headerlink" href="#Grafo.vecinoNoProcesado" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metodo para retornar los vecino no procesados de un nodo</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>grafo</strong> (<em>grafo</em>) &#8211; Objeto grafo</li>
+<li><strong>nodo</strong> (<em>Variable</em>) &#8211; Nodo del grafo</li>
+<li><strong>procesados</strong> (<em>Variable</em>) &#8211; Elementos procesados del grafo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 
@@ -138,7 +390,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Ricardo Gottheil DFlórez.
+        &copy; Copyright 2016, Ricardo Gottheil Flórez.
 
     </p>
   </div>
